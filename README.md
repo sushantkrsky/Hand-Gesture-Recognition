@@ -56,15 +56,16 @@ This project implements a hand gesture recognition system that controls the syst
 - **Adjust Brightness**: Use your left hand to control the screen brightness. Move your hand up to increase the brightness and down to decrease it.
 
 ## Project Structure
+```
 hand-gesture-recognition/
 │
 ├── app.py # Flask application and Main logic for gesture detection
 ├── templates/
-│ └── index.html # HTML file for the homepage
-  └── index.html # HTML file for the webcam interface
+│ └── landing.html # HTML file for the homepage
+│ └── index.html # HTML file for the webcam interface
 ├── requirements.txt # List of dependencies
 └── README.md # Project documentation
-
+```
 ## Contributing
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
