@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Gesture Control Project</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #72EDF2 10%, #5151E5 100%);
+            font-family: 'Arial', sans-serif;
+            color: #161927;
+        }
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .guidance {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1em;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+        .guidance .left, .guidance .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 45%;
+        }
+        .developers {
+            white-space: pre;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #ffffff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        .button:active {
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hand Gesture Control Project</h1>
+        <p>This project demonstrates controlling system volume and brightness using hand gestures detected via webcam. It uses OpenCV, MediaPipe, and other libraries to achieve this functionality.</p>
+        <p class="developers"><strong>Developed by: Sourav Roy [1JB21CS150]</strong>
+        <strong>                        Sushant Kumar [1JB21CS156]</strong></p>
+        <p><strong>Under the Guidance of:</strong></p>
+        <div class="guidance">
+            <div class="left"><strong>Dr. Bindiya M K<br>Professor,<br>Dept of CSE, SJBIT</strong></div>
+            <div class="right"><strong>Dr. Roopa M J<br>Associate Professor,<br>Dept of CSE, SJBIT</strong></div>
+        </div>
+        <a href="{{ url_for('index') }}" class="button">Click Here to View</a>
+    </div>
+</body>
+</html>
